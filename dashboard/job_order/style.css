@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar 
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1a73e8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    font-size: 1.5em;
+    padding: 20px;
+    text-align: center;
+    background-color: #0c47a1;
+}
+
+.sidebar .profile {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #0c47a1;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.sidebar .profile p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    background-color: #0c47a1;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Top bar */
+.top-bar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.top-bar .profile {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #0c47a1;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a73e8;
+}
+
+/* Popup Form */
+/* Popup Form Styling */
+.popup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    height: 500px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.form-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 60px; /* Space for the buttons at the bottom */
+}
+
+.field-pair {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%; /* Adjust to fit two fields side by side */
+    margin-right: 10px;
+}
+
+.field-pair input {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 20px;
+    padding-left: 800px;
+    padding-top: 1000px;
+    justify-content: space-between;
+}
+
+.table-buttons {
+    margin-top: 20px;
+    padding-left: 86%;
+    justify-content: space-between;
+}
+
+.table-buttons button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .top-bar {
+        flex-direction: column;
+    }
+}

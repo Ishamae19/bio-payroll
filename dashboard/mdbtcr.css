@@ -1,0 +1,210 @@
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: relative; 
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.container button:hover {
+    background-color: #45a049;
+}
+
+.container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fixed layout to prevent cell expansion */
+
+}
+
+.container table, th, td {
+    border: 1px solid #ddd;
+}
+
+.container table th,
+.container table td {
+    width: 120px;
+    min-width: 120px; /* Set a minimum width for columns */
+    max-width: 120px; /* Prevent columns from expanding too much */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* No text wrapping */
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.container table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.container table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.container table tbody tr td {
+    text-align: center;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 150px auto ; /* 15% from the top and centered */
+    padding: 30px; /* Increased padding */
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    max-width: 500px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Space below the header */
+    color: #333; /* Darker color for better visibility */
+    font-size: 24px; /* Increased font size */
+}
+
+.modal-content label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 8px; /* Space below the label */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content input[type="email"],
+.modal-content input[type="date"],
+.modal-content input[type="tel"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Increased padding */
+    margin-bottom: 20px; /* Space below input fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+.modal-content button[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Increased font size */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.action-buttons {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+.back {
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* General Button Style */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight pop effect on hover */
+}
+
+/* Disabled Button State */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Specific Styles for Edit and Delete Buttons */
+#editButton {
+    background-color: #2196F3; /* Blue for Edit */
+}
+
+#editButton:hover {
+    background-color: #1e87e5;
+}
+
+#deleteButton {
+    background-color: #f44336; /* Red for Delete */
+}
+
+#deleteButton:hover {
+    background-color: #e53935;
+}
+#obButton {
+    background-color: #4CAF50; /* Blue for Edit */
+}
+
+#obButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+.selected {
+    background-color: #d1e7dd !important;
+}
